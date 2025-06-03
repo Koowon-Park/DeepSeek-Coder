@@ -76,3 +76,89 @@ Python, C++, Java, PHP, TypeScript, C#, Bash, JavaScript 등 다수
 - configs, scripts, checkpoints 등 추가 디렉터리는 실제 레포를 확인하며 세부 구조 파악 필요
 
 ---
+
+# DeepSeek-Coder 주요 폴더/파일별 설명
+
+아래는 `deepseek-ai/DeepSeek-Coder` 레포지토리의 주요 폴더 및 파일에 대한 설명입니다.
+
+---
+
+## 📂 Root (최상위)
+
+- [.gitignore](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/.gitignore):  
+  Git에서 추적하지 않을 파일/폴더 패턴 목록.
+
+- [LICENSE-CODE](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/LICENSE-CODE):  
+  코드에 대한 라이선스 명시.
+
+- [LICENSE-MODEL](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/LICENSE-MODEL):  
+  모델에 대한 라이선스 명시.
+
+- [README.md](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md):  
+  프로젝트 개요, 특징, 사용법, 파인튜닝, FAQ 등 문서.
+
+- [requirements.txt](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/requirements.txt):  
+  프로젝트(혹은 기본 환경)에 필요한 파이썬 패키지 목록.
+
+---
+
+## 📂 Evaluation
+
+- [DS-1000](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/Evaluation/DS-1000)
+- [HumanEval](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/Evaluation/HumanEval)
+- [LeetCode](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/Evaluation/LeetCode)
+- [MBPP](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/Evaluation/MBPP)
+- [PAL-Math](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/Evaluation/PAL-Math)
+
+> 다양한 코드 벤치마크 평가용 스크립트와 데이터/설정이 들어 있습니다.  
+> 각 폴더는 해당 벤치마크의 세부적인 평가 방법, 결과, 실행 스크립트 등을 포함합니다.
+
+---
+
+## 📂 demo
+
+- [app.py](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/demo/app.py):  
+  Gradio 기반 웹 데모 앱 실행 코드.
+
+- [requirement.txt](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/demo/requirement.txt):  
+  데모 실행에 필요한 파이썬 패키지 목록.
+
+- [style.css](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/demo/style.css):  
+  데모 웹 UI 스타일.
+
+---
+
+## 📂 finetune
+
+- [README.md](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/finetune/README.md):  
+  DeepSeek Coder 모델 파인튜닝 방법 안내.
+
+- [finetune_deepseekcoder.py](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/finetune/finetune_deepseekcoder.py):  
+  파인튜닝 스크립트.
+
+- [requirements.txt](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/finetune/requirements.txt):  
+  파인튜닝에 필요한 패키지 목록.
+
+- [configs](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/finetune/configs):  
+  DeepSpeed 등 파인튜닝/훈련을 위한 설정 파일 디렉터리.
+
+---
+
+## 📂 pictures
+
+> 프로젝트 및 문서에 사용되는 이미지/로고/시각화 결과 등이 저장되어 있습니다.
+> (폴더 내 전체 파일 목록은 [GitHub에서 확인](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/pictures)하세요.)
+
+- [logo.png](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/pictures/logo.png):  
+  프로젝트 로고
+- [result.png](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/pictures/result.png):  
+  성능 결과 시각화
+- [HumanEval.png](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/pictures/HumanEval.png):  
+  벤치마크 관련 이미지
+- 기타 다양한 벤치마크/모델 시각화 이미지 다수
+
+---
+
+> **참고:**  
+> - 위 설명은 각 폴더/파일의 표준적 역할 및 네이밍을 기반으로 작성되었습니다.  
+> - 일부 폴더(특히 `/pictures`)는 파일이 많으니, 전체 내용은 [GitHub 페이지](https://github.com/deepseek-ai/DeepSeek-Coder/tree/main/pictures)에서 직접 확인 가능합니다.
